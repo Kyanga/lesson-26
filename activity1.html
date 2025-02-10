@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Class in JS</h2>
+    <P id="p1"></P>
+    <P id="p2"></P>
+    <P id="p3"></P>
+    <P id="p4"></P>
+    <P id="p5"></P>
+    <P id="p6"></P>
+    <script>
+        class student{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            display(){
+                return "Student is "+this.age+"years old";
+            }
+        }
+        stud1=new student("Ana",9);
+        document.getElementById("p1").innerHTML="Name of the student is "+stud1.name;
+        document.getElementById("p2").innerHTML=stud1.display();
+    </script>
+</body>
+</html>
