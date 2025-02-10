@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+<P id="p1"></P>
+<P id="p2"></P>
+<P id="p3"></P>
+<P id="p4"></P>
+<P id="p5"></P>
+<P id="p6"></P>
+<script>
+    //parent class
+    class car{
+        constructor(brand){
+            this.brand=brand
+        }
+        display(){
+            return "This car "+this.brand;
+        }
+    }
+    //child class
+    class Model extends car{
+        constructor(brand,mod){
+            super(brand);
+            this.mod=mod;
+        }
+        show(){
+            return this.display()+" and the model is "+this.mod;
+        }
+    }
+    var m1=new Model("Maruti","Celerio ");
+    document.getElementById("p1").innerHTML=m1.show();
+</script>
+</body>
+</html>
